@@ -1,10 +1,14 @@
+import SocialLinks from "./social-links";
 
 const Intro = () => {
   return (
-    <section className="items-center md:justify-between my-8 md:mb-12">
-      <h1 className="text-2xl md:text-4xl font-bold tracking-loose md:pr-8">
-        Julien Marc Brown
-      </h1>
+    <section className="items-center">
+        <div>
+          <h1 className="text-3xl md:text-6xl font-bold tracking-loose p-6">
+                Julien Marc Brown
+          </h1>
+            <SocialLinks/>
+        </div>
     </section>
   )
 }
