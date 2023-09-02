@@ -20,8 +20,8 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>{`Julien Marc Brown`}</title>
         </Head>
+        <Intro/>
         <Container>
-          <Intro />
           <Biography/>
           <SectionSeparator/>
           {allPosts.length > 0 && <PostsDisplay posts={allPosts.slice()} />}
