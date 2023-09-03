@@ -1,8 +1,8 @@
 
 export default function Skills() {
   return (
-    <div className="pb-6 mx-auto">
-        <h2 className="font-semibold text-3xl text-center p-6" id="about">Skills</h2>
+    <div className="md:p-12 mx-auto">
+        <h2 className="font-semibold text-3xl text-center p-6" id="skills">Skills</h2>
         <div className="grid md:grid-cols-2 grid-cols-1 text-center">
             <div className="border-gray-100 border-2 p-6">
                 <h3 className="font-semibold text-xl">Backend</h3>

@@ -1,6 +1,6 @@
 export default function History() {
     const events = [
-        { id: 1, date: 'January 2022 to Present', company: 'Ganze Karte', title: 'Freelance'},
+        { id: 1, date: 'January 2022 to Present', company: 'GanzeKarte LLC', title: 'Freelance'},
         { id: 2, date: 'January 2022 to January 2023', company: 'Facebook', title: 'Technical Product PM'},
         { id: 3, date: 'January 2021 to January 2022', company: "Moody's Analytics", title: 'Senior Engineering Manager'},
         { id: 4, date: 'January 2018 to January 2022', company: "RMS", title: 'Engineering Manager'},
@@ -12,7 +12,8 @@ export default function History() {
 
     ];
     return (
-        <div className="w-full md:max-w-2xl mx-auto p-8">
+        <div className="w-full md:max-w-2xl mx-auto md:p-24">
+            <h2 className="font-semibold text-3xl text-center p-6" id="history">History</h2>
             <div className="relative">
                 {/* Timeline line */}
                 <div className="absolute top-0 left-1/4 h-full w-0.5 bg-gray-300"></div>
@@ -24,7 +25,7 @@ export default function History() {
                         </div>
                         {/* Event detail */}
                         <div className="flex-grow pl-4">
-                            <div className="px-4 py-2 bg-gray-200 rounded-md shadow">
+                            <div className="px-4 py-2 bg-gray-200 rounded-md shadow text-center">
                                 <strong>{event.company}</strong><br/>
                                 {event.title}
                             </div>

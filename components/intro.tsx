@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Intro = () => {
     return (
-        <div className="flex-wrap md:justify-between mx-auto text-center mb-24 py-12">
-            <div className="md:pr-12 md:float-left font-medium text-gray-600">
+        <div className="flex-wrap md:justify-between mx-auto text-center md:p-24">
+            <div className="md:p-12 md:float-left font-medium text-gray-600">
                 <h1 id="/" className="text-2xl md:text-4xl font-bold tracking-loose">
                     Hello, I'm Julien!
                 </h1>
@@ -22,6 +22,9 @@ const Intro = () => {
             <div className="md:pl-12 left-1 flex justify-center md:justify-start">
                 <Image src="/assets/julien.jpeg" alt="Julien Marc Brown" width="200" height="200"></Image>
             </div>
+            <button className="my-12 mx-auto text-center bg-gray-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                <a href="#contact">Contact me</a>
+            </button>
         </div>
     )
 }

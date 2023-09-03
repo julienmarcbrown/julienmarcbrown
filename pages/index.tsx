@@ -19,9 +19,13 @@ export default function Index({ allPosts }: Props) {
       <Layout>
         <Container>
           <Intro/>
+          <hr/>
           <About/>
+          <hr/>
           <Skills/>
+          <hr/>
           <History/>
+          <hr/>
           <Contact/>
         </Container>
       </Layout>

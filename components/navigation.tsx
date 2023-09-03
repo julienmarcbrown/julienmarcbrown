@@ -7,7 +7,7 @@ import React, {Fragment} from 'react'
 
 const Navigation = () => {
     return (
-        <div className="relative z-10 border-b-2 m:p-6 border-b-gray-50 bg-gray-100" id="nav">
+        <div className="relative z-10 border-b-2 md:p-24 border-b-gray-50 bg-gray-100" id="nav">
             <div className="mx-auto w-full m:w-[75%]">
                 <div className="relative">
                     <Menu>
@@ -35,11 +35,11 @@ const Navigation = () => {
                                         <Link href="#about" className="hover:font-normal hover:text-gray-950">
                                             About
                                         </Link>
-                                        <Link href="#projects" className="hover:font-normal hover:text-gray-950">
-                                            Projects
+                                        <Link href="#skills" className="hover:font-normal hover:text-gray-950">
+                                            Skills
                                         </Link>
-                                        <Link href="#resume" className="hover:font-normal hover:text-gray-950">
-                                            Résumé
+                                        <Link href="#history" className="hover:font-normal hover:text-gray-950">
+                                            Work History
                                         </Link>
                                         <Link href="#contact" className="hover:font-normal hover:text-gray-950">
                                             Contact
