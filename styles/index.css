@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.timeline-container {
+    padding-left: 24px; /* Add space for the vertical line */
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: #333; /* The color of the vertical line */
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 16px; /* Space between timeline items */
+}
+
+.timeline-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333; /* Dot color */
+    position: relative;
+    z-index: 1; /* Make sure dot appears above the line */
+}
+
+.timeline-content {
+    margin-left: 16px; /* Space between dot and content */
+}

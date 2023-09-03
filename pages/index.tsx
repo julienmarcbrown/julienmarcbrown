@@ -1,13 +1,13 @@
 import Container from '../components/container'
-import PostsDisplay from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
 import Post from '../interfaces/post'
-import Biography from "../components/biography";
-import SectionSeparator from "../components/section-separator";
+import About from "../components/about";
+import Intro from "../components/intro";
+import Contact from "../components/contact";
+import Skills from "../components/skills";
+import History from "../components/history";
+import React from "react";
 
 type Props = {
   allPosts: Post[]
@@ -17,14 +17,16 @@ export default function Index({ allPosts }: Props) {
   return (
     <>
       <Layout>
-        <Head>
-          <title>{`Julien Marc Brown`}</title>
-        </Head>
         <Container>
-          <Intro />
-          <Biography/>
-          <SectionSeparator/>
-          {allPosts.length > 0 && <PostsDisplay posts={allPosts.slice()} />}
+          <Intro/>
+          <hr/>
+          <About/>
+          <hr/>
+          <Skills/>
+          <hr/>
+          <History/>
+          <hr/>
+          <Contact/>
         </Container>
       </Layout>
     </>

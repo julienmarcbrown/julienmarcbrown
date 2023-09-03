@@ -7,20 +7,20 @@ const SocialLinks = () => {
         <section className="flex">
             <Link href="mailto:mail@julienmarcbrown/"><Image
                 src="/social-icons/mail.svg"
-                height={32}
-                width={32}
+                height={24}
+                width={24}
                 alt="Email me"
             /></Link>
             <Link href="https://www.linkedin.com/in/julienmarcbrown/"><Image
                 src="/social-icons/linkedin.svg"
-                height={32}
-                width={32}
+                height={24}
+                width={24}
                 alt="Follow me on LinkedIn"
             /></Link>
             <Link href="https://www.github.com/julienmarcbrown/"><Image
                 src="/social-icons/github.svg"
-                height={32}
-                width={32}
+                height={24}
+                width={24}
                 alt="Follow me on Github"
             /></Link>
         </section>
