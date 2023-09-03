@@ -7,7 +7,7 @@ import React, {Fragment} from 'react'
 
 const Navigation = () => {
     return (
-        <div className="relative z-10 border-b-2 md:p-24 border-b-gray-50 bg-gray-100" id="nav">
+        <div className="relative z-10 border-b-2 md:py-8 px-24 border-b-gray-50 bg-gray-100" id="nav">
             <div className="mx-auto w-full m:w-[75%]">
                 <div className="relative">
                     <Menu>

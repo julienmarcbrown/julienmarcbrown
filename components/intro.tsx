@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Intro = () => {
     return (
-        <div className="flex-wrap md:justify-between mx-auto text-center md:p-24">
+        <div className="flex-wrap md:justify-between mx-auto text-center md:py-16">
             <div className="md:p-12 md:float-left font-medium text-gray-600">
                 <h1 id="/" className="text-2xl md:text-4xl font-bold tracking-loose">
                     Hello, I'm Julien!

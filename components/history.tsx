@@ -12,7 +12,7 @@ export default function History() {
 
     ];
     return (
-        <div className="w-full md:max-w-2xl mx-auto md:p-24">
+        <div className="w-full md:max-w-2xl mx-auto md:py-16">
             <h2 className="font-semibold text-3xl text-center p-6" id="history">History</h2>
             <div className="relative">
                 {/* Timeline line */}
