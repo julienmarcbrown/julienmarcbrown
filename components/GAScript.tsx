@@ -4,17 +4,16 @@ const GAScript = () => {
     return (
         <>
             <Script
-                strategy="lazyOnload"
-                src={`https://www.googletagmanager.com/gtag/js?id=G-9QM0CZH9ZC`}
+                src="https://www.googletagmanager.com/gtag/js?id=G-9QM0CZH9ZC"
+                strategy="afterInteractive"
             />
-            <Script strategy="lazyOnload" id="ga-script">
+            <Script id="google-analytics" strategy="afterInteractive">
                 {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9QM0CZH9ZC', {
-              page_path: window.location.pathname,
-            });
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9QM0CZH9ZC');
         `}
             </Script>
         </>
